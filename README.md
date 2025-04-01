@@ -14,5 +14,5 @@ A stylish and interactive **Coffee House Website** built using **HTML, CSS, and 
 - **JavaScript** – Adding interactivity  
 
 ## 
-🔗 **Live Demo:** [https://akanksha9191.github.io/Coffee-House-Website/]
+🔗 **Live Demo:** [https://pratikyewale007.github.io/Coffee-House/]
 
