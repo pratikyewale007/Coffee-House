@@ -1,0 +1,128 @@
+@font-face {
+    font-family: myfont;
+    src: url("Life\ Style.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+
+}
+
+/* Navigation bar */
+nav{
+    position: fixed; 
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 2px solid bisque;
+ }
+ 
+ nav ul{
+     float: left;
+     margin-left: 20px;
+ }
+ nav ul li{
+     list-style: none;
+     display: inline-block;
+     line-height: 70px;
+     margin: 0 30px;
+ }
+ nav ul li a{
+     text-decoration: none;
+     color: brown;
+     font-weight: bold;
+     font-size: 14px;
+     padding: 10px;
+     border-radius: 3px;
+ }
+ nav a.active, nav a:hover{
+     background-color: antiquewhite;
+ }
+ 
+ #nav-logo{
+     width: 100px;
+     margin-right: 20px;
+     float: right;
+ }
+ .checkbtn{
+     font-size:40px;
+     color: brown;
+     float: left;
+     line-height: 70px;
+     margin-left: 40px;
+     cursor: pointer;
+     display:none;
+     display: none;
+ }
+ #check{
+     display: none;
+ }
+ /*----Navigation bar End-------*/
+ /*----Navigation bar Media Query-------*/
+ @media screen and (max-width:1050px) {
+     nav ul li{
+         margin: 0 20px;
+     }
+     nav ul li a{
+         font-size: 14px;
+         padding: 3px;
+     } 
+ }
+ @media screen and (max-width:765px){
+     nav ul li{
+         margin: 0 10px;
+     }
+     nav ul li a{
+         font-size: 12px;
+         padding: 1px;
+     } 
+ }
+ @media screen and (max-width:600px){
+     .checkbtn{
+         display: block;
+     }
+     nav ul{
+         position: fixed;
+         width: 100%;
+         height: 70%;
+         background: coral;
+         top: 70px;
+         right: -100%;
+         text-align: center;
+         transition: all .5s;
+     }
+    nav ul li {
+     display: block;
+     margin: 50px 0;
+     line-height: 20px;
+ 
+    }
+    nav ul li a{
+     font-size: 18px;
+    }
+    #nav-logo{
+     margin-right: 50px;
+    }
+    nav a:hover, nav a.active{
+     background: none;
+     color: white;
+    }
+    #check:checked ~ul{
+     right: 0;
+    }
+ }
+
+/* social media */
+ #footer-link{
+    text-decoration: none;
+}
+#click-btn{
+    border-color: bisque ;
+    border-radius: 5px;
+    background-color: white;
+    color: brown;
+    padding: 3px;
+}

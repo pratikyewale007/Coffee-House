@@ -1,0 +1,318 @@
+@font-face {
+    font-family: myfont;
+    src: url("./Life\ Style.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: myfont;
+    box-sizing: border-box;
+}
+/*Navigation bar*/
+nav{
+    position: fixed; 
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 2px solid bisque;
+ }
+ 
+ nav ul{
+     float: left;
+     margin-left: 20px;
+ }
+ nav ul li{
+     list-style: none;
+     display: inline-block;
+     line-height: 70px;
+     margin: 0 30px;
+ }
+ nav ul li a{
+     text-decoration: none;
+     color: brown;
+     font-weight: bold;
+     font-size: 14px;
+     padding: 10px;
+     border-radius: 3px;
+ }
+ nav a.active, nav a:hover{
+     background-color: antiquewhite;
+ }
+ 
+ #nav-logo{
+     width: 100px;
+     margin-right: 20px;
+     float: right;
+ }
+ .checkbtn{
+     font-size:40px;
+     color: brown;
+     float: left;
+     line-height: 70px;
+     margin-left: 40px;
+     display:none;
+     display: none;
+ }
+ #check{
+     display: none;
+ }
+ /*Navigation bar*/
+ /*Navigation bar Media Query*/
+ @media screen and (max-width:1050px) {
+     nav ul li{
+         margin: 0 20px;
+     }
+     nav ul li a{
+         font-size: 14px;
+         padding: 3px;
+     } 
+ }
+ @media screen and (max-width:765px){
+     nav ul li{
+         margin: 0 10px;
+     }
+     nav ul li a{
+         font-size: 12px;
+         padding: 1px;
+     } 
+ }
+ @media screen and (max-width:600px){
+     .checkbtn{
+         display: block;
+     }
+     nav ul{
+         position: fixed;
+         width: 100%;
+         height: 70%;
+         background: coral;
+         top: 70px;
+         right: -100%;
+         text-align: center;
+         transition: all .5s;
+     }
+    nav ul li {
+     display: block;
+     margin: 50px 0;
+     line-height: 20px;
+ 
+    }
+    nav ul li a{
+     font-size: 18px;
+    }
+    #nav-logo{
+     margin-right: 50px;
+    }
+    nav a:hover, nav a.active{
+     background: none;
+     color: white;
+    }
+    #check:checked ~ul{
+     right: 0;
+    }
+ }
+/*Navigation bar Media Query*/
+
+/* Title Styling */
+#style-title {
+    text-align: center;
+}
+
+#style-title a {
+    color: brown;
+    text-decoration: none;
+    margin: 20px;
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Responsive Title */
+@media screen and (max-width: 1270px) {
+    #style-title a {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #style-title a {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+}
+
+/* Menu Container */
+.menu-container {
+    position: relative;
+    z-index: -1;
+    top: 110px;
+    text-align: center;
+}
+
+/* Special Offers Section */
+.special-offers {
+    position: relative;
+    top: 40px;
+    z-index: -1;
+    margin: 10px 20px 70px 20px;
+}
+
+/* Marquee Styling */
+#marquee-text {
+    border: 2px solid wheat;
+    background-color: brown;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+#marquee-text span {
+    padding-right: 200px;
+}
+
+/* Responsive Marquee */
+@media screen and (max-width: 600px) {
+    #marquee-text {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #marquee-text span {
+        padding-right: 200px;
+    }
+}
+
+/* Offer Items */
+.offer-items {
+    background-color: rgb(242, 230, 209);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Offer Cards */
+.offer-items .card {
+    width: 100%;
+    max-width: 300px; 
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Offer Card Titles */
+.offer-items .card h5 {
+    color: brown;
+}
+
+/* Offer Note */
+.offer-note {
+    font-size: 18px;
+    color: brown;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .offer-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-items .card {
+        width: 90%;
+    }
+}
+
+/* Menu Card Container */
+.menu-card {
+    position: relative;
+    bottom: 100px;
+    z-index: -1;
+    /* background-color: rgb(242, 199, 144); */
+    padding: 80px 10px 60px 10px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+    margin-bottom: 30px;
+}
+
+
+/*Menu Card */
+.menu-card .card {
+    border: 2px solid #d2b48c;
+    width: 100%;
+    max-width: 320px; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Title */
+.menu-card .card h5 {
+    color: brown;
+    font-size: 24px;
+}
+
+/* Card List */
+.menu-card .card ul {
+    font-size: 16px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Card Image */
+.menu-card .card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Responsive*/
+@media screen and (min-width: 768px) {
+    .menu-card {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+    .menu-card {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .menu-card .card {
+        width: 90%; 
+    }
+}
+
+
+/* Footer */
+#footer-link{
+    text-decoration: none;
+}
+#click-btn{
+    border-color: bisque ;
+    border-radius: 5px;
+    background-color: white;
+    color: brown;
+    padding: 3px;
+}

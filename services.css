@@ -1,0 +1,251 @@
+@font-face {
+    font-family: myfont;
+    src: url("Life\ Style.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+
+}
+
+/*Navigation bar*/
+nav{
+    position: fixed; 
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 2px solid bisque;
+ }
+ 
+ nav ul{
+     float: left;
+     margin-left: 20px;
+ }
+ nav ul li{
+     list-style: none;
+     display: inline-block;
+     line-height: 70px;
+     margin: 0 30px;
+ }
+ nav ul li a{
+     text-decoration: none;
+     color: brown;
+     font-weight: bold;
+     font-size: 14px;
+     padding: 10px;
+     border-radius: 3px;
+ }
+ nav a.active, nav a:hover{
+     background-color: antiquewhite;
+ }
+ 
+ #nav-logo{
+     width: 100px;
+     margin-right: 20px;
+     float: right;
+ }
+ .checkbtn{
+     font-size:40px;
+     color: brown;
+     float: left;
+     line-height: 70px;
+     margin-left: 40px;
+     cursor: pointer;
+     display:none;
+     display: none;
+ }
+ #check{
+     display: none;
+ }
+ /*----Navigation bar End-------*/
+ /*----Navigation bar Media Query-------*/
+ @media screen and (max-width:1050px) {
+     nav ul li{
+         margin: 0 20px;
+     }
+     nav ul li a{
+         font-size: 14px;
+         padding: 3px;
+     } 
+ }
+ @media screen and (max-width:765px){
+     nav ul li{
+         margin: 0 10px;
+     }
+     nav ul li a{
+         font-size: 12px;
+         padding: 1px;
+     } 
+ }
+ @media screen and (max-width:600px){
+     .checkbtn{
+         display: block;
+     }
+     nav ul{
+         position: fixed;
+         width: 100%;
+         height: 70%;
+         background: coral;
+         top: 70px;
+         right: -100%;
+         text-align: center;
+         transition: all .5s;
+     }
+    nav ul li {
+     display: block;
+     margin: 50px 0;
+     line-height: 20px;
+ 
+    }
+    nav ul li a{
+     font-size: 18px;
+    }
+    #nav-logo{
+     margin-right: 50px;
+    }
+    nav a:hover, nav a.active{
+     background: none;
+     color: white;
+    }
+    #check:checked ~ul{
+     right: 0;
+    }
+ }
+
+/* Cospace */
+.cospace{
+    display: flex;
+    margin: 0px 120px 50px 120px;
+}
+
+/* CoSpace para */
+.cospace p{
+    color: brown;
+    font-weight: 500;
+    font-size: large;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+/* Community Space */
+.community{
+    display: flex;
+    margin: 50px 120px 50px 120px;
+}
+
+/* Community space Para */
+.community p{
+    color: brown;
+    font-weight: 500;
+    font-size: large;
+    text-align: justify;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
+/* Foodie Space */
+.foodie{
+    display: flex;
+    margin: 50px 120px 50px 120px;
+}
+
+/* Foodie space para */
+.foodie p{
+    color: brown;
+    font-weight: 500;
+    font-size: large;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+@media  screen and (max-width:1000px) {
+    .cospace{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cospace p{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 30px;
+    }
+
+    .community{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .community p{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+
+    .foodie{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .foodie p{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 30px;
+    }
+}
+
+@media  screen and (max-width:650px) {
+    .cospace{
+        margin: 30px;
+    }
+    .community{
+        margin: 30px;
+    }
+    .foodie{
+        margin: 30px;
+    }
+    .imgcomm{
+        width: 300px;
+    }
+}
+
+@media  screen and (max-width:400px) {
+    #imgcosp{
+        width: 300px;
+    }
+    #imgfodi{
+        width: 300px;
+    }
+}
+
+#avail-img{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 50px 0px;
+}
+
+.borders{
+    border: 1px solid brown;
+    margin: 0px 110px 0px 110px;
+}
+
+@media  screen and (max-width:650px) {
+    .borders{
+        margin: 0px 20px 0px 20px;
+    }
+}
+/* social media */
+#footer-link{
+    text-decoration: none;
+}
+#click-btn{
+    border-color: bisque ;
+    border-radius: 5px;
+    background-color: white;
+    color: brown;
+    padding: 3px;
+}
