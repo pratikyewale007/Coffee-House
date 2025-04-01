@@ -1,6 +1,6 @@
 # ☕ Coffee House Website  
 
-A stylish and interactive **Coffee House Website** built using **HTML, CSS, and JavaScript**. This project provides a user-friendly interface with seamless browsing and form validation.  
+A stylish and interactive **Coffee House Website** built using **HTML, CSS, Bootstrap and JavaScript**. This project provides a user-friendly interface with seamless browsing and form validation.  
 
 ## 🚀 Features  
 - **Responsive Design** – Adapts to all screen sizes  
